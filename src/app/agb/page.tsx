@@ -17,16 +17,16 @@ export default function AgbPage() {
       index="10"
       eyebrow="Rechtliches"
       title="Allgemeine Geschäftsbedingungen"
-      intro="Diese AGB regeln die Geschäftsbeziehung zwischen der Süba Dragon Wohnbau GmbH und ihren Kund:innen im Rahmen der Vermittlung von Immobiliardarlehen (§ 34 i GewO), Verbraucherkrediten sowie der unverbindlichen Erstprüfung („Konditions-Check")."
+      intro={`Diese AGB regeln die Geschäftsbeziehung zwischen der Süba Dragon Wohnbau GmbH und ihren Kund:innen im Rahmen der Vermittlung von Immobiliardarlehen (§ 34 i GewO), Verbraucherkrediten sowie der unverbindlichen Erstprüfung (\u201eKonditions-Check\u201d).`}
       updated={UPDATED}
     >
       <h2>
         <span className="num">§ 1</span>Geltungsbereich
       </h2>
       <p>
-        (1) Diese Allgemeinen Geschäftsbedingungen („AGB") gelten für alle Geschäftsbeziehungen zwischen
+        (1) Diese Allgemeinen Geschäftsbedingungen („AGB“) gelten für alle Geschäftsbeziehungen zwischen
         der <strong>Süba Dragon Wohnbau GmbH</strong>, <span className="placeholder">vollständige Anschrift</span>{" "}
-        (nachfolgend „Anbieter") und ihren Kund:innen (nachfolgend „Kund:in") in der zum Zeitpunkt des
+        (nachfolgend „Anbieter“) und ihren Kund:innen (nachfolgend „Kund:in“) in der zum Zeitpunkt des
         Vertragsschlusses gültigen Fassung.
       </p>
       <p>
@@ -70,7 +70,7 @@ export default function AgbPage() {
         <span className="num">§ 3</span>Konditions-Check / Erstgespräch
       </h2>
       <p>
-        (1) Der „Konditions-Check" ist eine <strong>kostenfreie und unverbindliche</strong>{" "}
+        (1) Der „Konditions-Check“ ist eine <strong>kostenfreie und unverbindliche</strong>{" "}
         Erstprüfung der Finanzierungs- bzw. Kreditsituation. Hierbei werden Vorhaben, Bonität,
         Eigenkapital, monatliche Belastbarkeit und Lebensplanung erörtert, um eine erste
         Konditionsindikation zu erstellen.

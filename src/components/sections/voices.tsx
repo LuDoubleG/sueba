@@ -63,7 +63,7 @@ export function Voices() {
                 transition={{ delay: i * 0.08, duration: 0.6, ease }}
                 className={`surface p-7 md:p-9 ${i === 1 ? "lg:ml-12" : i === 2 ? "lg:ml-24" : ""}`}
               >
-                <span className="mb-4 block text-5xl text-gold" style={{ fontFamily: "var(--font-display)", lineHeight: 0.7 }}>"</span>
+                <span className="mb-4 block text-5xl text-gold" style={{ fontFamily: "var(--font-display)", lineHeight: 0.7 }}>{'\u201C'}</span>
                 <blockquote className="text-bone md:text-3xl text-2xl" style={{ fontFamily: "var(--font-display)", lineHeight: 1.2, letterSpacing: "-0.015em" }}>{t.quote}</blockquote>
                 <figcaption className="mt-6 flex items-center gap-3 font-mono text-[11px] uppercase tracking-wide3 text-ash">
                   <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-bone/15 bg-bone/[0.04] text-bone">

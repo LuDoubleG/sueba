@@ -101,7 +101,7 @@ export default function ImpressumPage() {
         (DIHK).
       </p>
       <p>
-        Gesetzliche Berufsbezeichnung „Immobiliardarlehensvermittler" wurde verliehen in der
+        Gesetzliche Berufsbezeichnung „Immobiliardarlehensvermittler“ wurde verliehen in der
         Bundesrepublik Deutschland.
       </p>
       <h3>Maßgebliche berufsrechtliche Regelungen</h3>

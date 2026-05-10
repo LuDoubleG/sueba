@@ -56,7 +56,7 @@ export default function DatenschutzPage() {
       <p>
         Eine Pflicht zur Bestellung eines Datenschutzbeauftragten besteht für unser Unternehmen
         derzeit nicht. Bei Fragen rund um den Datenschutz wenden Sie sich bitte an die unter Ziffer 01
-        genannte Adresse mit dem Betreff <strong>„Datenschutz"</strong>.
+        genannte Adresse mit dem Betreff <strong>„Datenschutz“</strong>.
       </p>
 
       <h2>
@@ -123,7 +123,7 @@ export default function DatenschutzPage() {
       <p>
         Bearbeitung Ihrer Finanzierungs- bzw. Kreditanfrage, Vorbereitung und Durchführung des
         unverbindlichen Erstgesprächs, Erstellung einer ersten Konditionsindikation
-        („Konditions-Check") und ggf. Anfrage bei finanzierenden Banken nach Ihrer ausdrücklichen
+        („Konditions-Check“) und ggf. Anfrage bei finanzierenden Banken nach Ihrer ausdrücklichen
         Freigabe.
       </p>
       <h3>Rechtsgrundlage</h3>
