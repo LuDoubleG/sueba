@@ -20,7 +20,7 @@ export function Faq() {
             <span className="dot" />
             <span>08 — FAQ</span>
           </div>
-          <span>Baufinanzierung &amp; Kredite · FAQ</span>
+          <span>Immobilien als Kapitalanlage · FAQ</span>
         </div>
 
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
@@ -30,9 +30,8 @@ export function Faq() {
               <span className="italic text-gradient-warm">auf wichtige Fragen.</span>
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-bone/75">
-              Die wichtigsten Fragen rund um <strong className="font-medium text-bone">Baufinanzierung,
-              Anschlussfinanzierung und Privatkredite</strong> — Bauzinsen, KfW-Förderung, Tilgung,
-              Forward-Darlehen und Eigenkapital. Ehrlich beantwortet von Süba Dragon Wohnbau aus Mannheim.
+              Die wichtigsten Fragen rund um <strong className="font-medium text-bone">Immobilien als Kapitalanlage</strong> in Deutschland —
+              Eigenkapital, Mietrendite, Risiken, Steuern und Finanzierung. Ehrlich beantwortet von Süba Dragon Wohnbau aus Mannheim.
             </p>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-bone/55">
               Frage nicht dabei? Ruf direkt an oder schreib uns — wir antworten persönlich, nicht aus dem Bausteinkasten.
@@ -46,7 +45,7 @@ export function Faq() {
                 0621 3999 3141
               </a>
               <a href="#kontakt" className="cta-primary inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold">
-                <span className="relative z-10">Bestzins kostenlos sichern →</span>
+                <span className="relative z-10">Kostenlos prüfen lassen →</span>
               </a>
             </div>
           </div>
@@ -135,10 +134,9 @@ export function Faq() {
 
             <div className="mt-8 rounded-2xl border border-gold/25 bg-gold/[0.06] p-4 text-[13px] leading-relaxed text-bone/85 md:mt-10 md:p-5 md:text-sm">
               <p>
-                <span className="font-medium text-gold">Wichtiger Hinweis:</span> Diese FAQ ersetzt keine
-                individuelle Finanzierungs-, Steuer- oder Rechtsberatung. Süba Dragon Wohnbau ist
-                Immobiliardarlehensvermittler nach § 34 i GewO und prüft Ihre persönliche Situation im
-                kostenlosen Konditions-Check. Konditionen sind tagesabhängig und bonitätsabhängig.
+                <span className="font-medium text-gold">Wichtiger Hinweis:</span> Diese FAQ ersetzt keine individuelle Anlage-, Steuer- oder Rechtsberatung.
+                Süba Dragon Wohnbau prüft Ihre persönliche Situation im kostenlosen Investment-Check und arbeitet bei Bedarf mit qualifizierten
+                Steuerberatern und Finanzierungspartnern zusammen.
               </p>
             </div>
           </div>

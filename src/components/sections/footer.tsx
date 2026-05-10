@@ -41,11 +41,11 @@ export function Footer() {
                   paddingBottom: "0.12em"
                 }}
               >
-                Bereit für Ihren <span className="italic text-gradient-warm">Konditions-Check?</span>
+                Bereit für Ihren <span className="italic text-gradient-warm">Investment-Check?</span>
               </h2>
               <p className="mt-3 max-w-xl text-[14px] leading-relaxed text-bone/75 md:mt-4 md:text-[15.5px]">
-                Ein 30-Minuten-Erstgespräch zeigt Ihnen, welche Bank, Tilgung und Zinsbindung wirklich zu Ihnen passen —
-                kein Verkaufsgespräch, keine versteckten Kosten.
+                Ein 30-Minuten-Erstgespräch klärt, ob eine Anlageimmobilie zu Ihrer Situation passt — kein
+                Verkaufsgespräch, keine versteckten Kosten.
               </p>
               <p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[10px] uppercase tracking-wide3 text-bone/55">
                 <span className="inline-flex items-center gap-1.5"><span className="text-gold">✦</span> 100 % kostenlos</span>
@@ -67,7 +67,7 @@ export function Footer() {
               >
                 <span className="relative z-10 flex flex-col">
                   <span className="font-mono text-[10px] uppercase tracking-wide3 text-ink/55">Hauptaktion</span>
-                  <span className="mt-0.5 text-base font-semibold leading-tight md:text-lg">Bestzins kostenlos sichern</span>
+                  <span className="mt-0.5 text-base font-semibold leading-tight md:text-lg">Jetzt kostenlos prüfen lassen</span>
                 </span>
                 <span
                   className="relative z-10 ml-3 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-gold transition-transform duration-300 group-hover:rotate-[12deg]"
@@ -118,7 +118,7 @@ export function Footer() {
             >
               <span>Süba Dragon Wohnbau</span>
               <span className="text-gold">★</span>
-              <span className="italic">400+ Banken im Vergleich</span>
+              <span className="italic">Strategie vor Objekt</span>
               <span className="text-gold">★</span>
             </span>
           ))}
@@ -131,14 +131,14 @@ export function Footer() {
           {/* Brand — kompakt */}
           <div className="md:col-span-2 lg:col-span-4">
             <div className="relative h-11 w-[180px]">
-              <Image src="/sueba-dragon-logo-white.png" alt="Süba Dragon Wohnbau GmbH — Baufinanzierung & Kredite" fill className="object-contain object-left" />
+              <Image src="/sueba-dragon-logo-white.png" alt="Süba Dragon Wohnbau GmbH — Immobilien als Kapitalanlage" fill className="object-contain object-left" />
             </div>
             <p className="mt-4 max-w-sm text-[13.5px] leading-relaxed text-bone/65">
-              Unabhängige Vermittlung von Baufinanzierung, Anschlussfinanzierung und Privatkrediten —
-              deutschlandweit. 400+ Banken im Vergleich. Kein Verkaufsdruck.
+              Strategische Vermittlung von Anlageimmobilien — deutschlandweit. Mit Fokus auf Standort,
+              Finanzierung und Mietpotenzial. Kein Verkaufsdruck.
             </p>
             <ul className="mt-4 flex flex-wrap gap-1.5">
-              {["400+ Banken", "Schufa-neutral", "KfW integriert"].map((b) => (
+              {["Strategie vor Objekt", "Geprüfte Standorte", "Persönliche Analyse"].map((b) => (
                 <li
                   key={b}
                   className="inline-flex items-center gap-1.5 rounded-full border border-bone/12 bg-bone/[0.02] px-2.5 py-1 font-mono text-[9.5px] uppercase tracking-wide3 text-bone/70"
@@ -214,23 +214,21 @@ export function Footer() {
             <span className="text-bone/40 transition group-open:rotate-180">▾</span>
           </summary>
           <div className="border-t border-bone/10 px-4 py-3 text-[11.5px] leading-relaxed text-bone/55 md:px-5 md:py-4 md:text-[12px]">
-            Süba Dragon Wohnbau GmbH vermittelt <strong className="text-bone/80">Baufinanzierung,
-            Anschlussfinanzierung und Privatkredite</strong> für private Bauherren, Käufer:innen und
-            Modernisierer. Vergleich aus über 400 Banken, Sparkassen, Versicherern und Bausparkassen.
-            Schwerpunkte: Erstfinanzierung Eigenheim, Anschluss- &amp; Forward-Darlehen, KfW-Förderung
-            (124, 261, 300, 358), Modernisierungs- und Sanierungskredite, Privatkredite. Aktive Beratung in{" "}
-            <strong className="text-bone/80">Mannheim, Heidelberg, Ludwigshafen, Frankfurt am Main,
+            Süba Dragon Wohnbau GmbH vermittelt <strong className="text-bone/80">Immobilien als Kapitalanlage</strong> für
+            Privatinvestoren in Deutschland. Schwerpunkte: Anlageimmobilien & Renditeobjekte, Bestandsimmobilien,
+            Neubau-Kapitalanlagen, Denkmalimmobilien (AfA-Sonderabschreibung). Beratungsleistung: Standortanalyse,
+            Mietrendite-Berechnung, Eigenkapitalrendite, Cashflow-Prüfung, Finanzierungs-Sparring, steuerliche Einordnung.
+            Aktive Vermittlung in <strong className="text-bone/80">Mannheim, Heidelberg, Ludwigshafen, Frankfurt am Main,
             Stuttgart, Karlsruhe, Worms, Mainz, Wiesbaden, Köln, Düsseldorf, Hamburg, Berlin, München, Leipzig, Dresden,
-            Nürnberg, Hannover, Bremen, Bonn</strong> sowie deutschlandweit.
+            Nürnberg, Hannover, Bremen, Bonn</strong> sowie weiteren A-, B- und C-Standorten.
           </div>
         </details>
 
         {/* Risk disclaimer — kompakt */}
         <p className="mt-4 rounded-2xl border border-bone/10 bg-bone/[0.02] px-4 py-3 text-[11px] leading-relaxed text-bone/55 md:px-5">
-          <strong className="font-medium text-bone/75">Hinweis:</strong> Süba Dragon Wohnbau GmbH ist
-          Immobiliardarlehensvermittler nach § 34 i GewO. Diese Website stellt keine individuelle
-          Finanzierungsempfehlung, Anlage-, Rechts- oder Steuerberatung dar. Konditionen sind tagesabhängig und
-          bonitätsabhängig. Verbindliche Konditionen erst nach Bonitätsprüfung und Banken-Zusage.
+          <strong className="font-medium text-bone/75">Hinweis:</strong> Diese Website stellt keine Anlage-, Rechts- oder Steuerberatung dar.
+          Immobilieninvestitionen sind mit Risiken verbunden (Leerstand, Zinsänderung, Wertentwicklung, Instandhaltung).
+          Individuelle Prüfung Ihrer Situation erforderlich.
         </p>
 
         {/* Bottom strip — extra kompakt */}

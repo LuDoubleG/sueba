@@ -73,7 +73,7 @@ export function SiteNav() {
               href="#kontakt"
               className="cta-primary group hidden items-center gap-2 rounded-full px-4 py-2.5 text-[12px] font-semibold tracking-tight md:inline-flex"
             >
-              <span className="relative z-10">Bestzins prüfen</span>
+              <span className="relative z-10">Kostenlos prüfen</span>
               <span className="relative z-10 font-mono text-[10px]">→</span>
             </a>
 
@@ -133,7 +133,7 @@ export function SiteNav() {
                 onClick={() => setOpen(false)}
                 className="cta-primary cta-pulse block rounded-full py-4 text-center text-[15px] font-semibold"
               >
-                <span className="relative z-10">Bestzins kostenlos sichern →</span>
+                <span className="relative z-10">Jetzt kostenlos prüfen lassen →</span>
               </a>
               <a
                 href="tel:+4962139993141"

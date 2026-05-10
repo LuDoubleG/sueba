@@ -38,7 +38,7 @@ export function TrustStrip() {
             className="flex items-center gap-6 px-6 font-mono text-[11px] uppercase tracking-wide3 text-bone/70"
           >
             <span className="text-gold">✦</span>
-            <span>Baufinanzierung in {c}</span>
+            <span>Anlageimmobilien in {c}</span>
           </div>
         ))}
       </Marquee>

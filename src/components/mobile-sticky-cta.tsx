@@ -31,9 +31,9 @@ export function MobileStickyCta() {
             className="cta-primary group flex flex-1 items-center justify-between rounded-full px-4 py-3.5 text-[14px] font-semibold active:scale-[0.99]"
           >
             <span className="relative z-10 flex flex-col leading-tight">
-              <span>Bestzins kostenlos sichern</span>
+              <span>Jetzt kostenlos prüfen</span>
               <span className="font-mono text-[9px] font-normal uppercase tracking-wide3 text-ink/55">
-                400+ Banken · Antwort &lt; 24 h
+                unverbindlich · Antwort &lt; 24 h
               </span>
             </span>
             {/* Coin-Style Token */}

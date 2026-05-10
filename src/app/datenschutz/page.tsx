@@ -103,42 +103,37 @@ export default function DatenschutzPage() {
       </p>
 
       <h2>
-        <span className="num">06</span>Kontaktaufnahme &amp; Konditions-Check-Formular
+        <span className="num">06</span>Kontaktaufnahme &amp; Investment-Check-Formular
       </h2>
       <p>
         Wenn Sie uns über das Kontaktformular oder per E-Mail / Telefon kontaktieren, werden Ihre Angaben
-        zur Bearbeitung der Finanzierungsanfrage und für den Fall von Anschlussfragen gespeichert.
+        zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert.
       </p>
       <h3>Erhobene Daten</h3>
       <ul>
         <li>Vor- und Nachname</li>
         <li>E-Mail-Adresse</li>
         <li>Telefonnummer</li>
-        <li>Gewünschte Darlehenssumme &amp; monatliche Wunschrate (freiwillig)</li>
-        <li>Vorhaben (Erstfinanzierung, Anschlussfinanzierung, Forward, Modernisierung, Privatkredit)</li>
-        <li>Beschäftigungsverhältnis &amp; Bonitätsindikation (freiwillig)</li>
+        <li>Investitionsbudget &amp; monatlich verfügbare Liquidität (freiwillig)</li>
+        <li>Gewünschte Investmentziele</li>
+        <li>Information, ob bereits Immobilien vorhanden sind (freiwillig)</li>
         <li>Inhalt Ihrer Nachricht</li>
       </ul>
       <h3>Zweck</h3>
       <p>
-        Bearbeitung Ihrer Finanzierungs- bzw. Kreditanfrage, Vorbereitung und Durchführung des
-        unverbindlichen Erstgesprächs, Erstellung einer ersten Konditionsindikation
-        („Konditions-Check“) und ggf. Anfrage bei finanzierenden Banken nach Ihrer ausdrücklichen
-        Freigabe.
+        Bearbeitung Ihrer Anfrage, Vorbereitung und Durchführung des unverbindlichen Erstgesprächs,
+        Übermittlung der individuellen Erstprüfung („Investment-Check“).
       </p>
       <h3>Rechtsgrundlage</h3>
       <p>
-        <strong>Art. 6 Abs. 1 lit. b DSGVO</strong> (vorvertragliche Maßnahmen),{" "}
-        <strong>Art. 6 Abs. 1 lit. a DSGVO</strong> (Einwilligung über die Checkbox), bei Bonitäts-
-        und Bankenanfragen zusätzlich <strong>Art. 6 Abs. 1 lit. c DSGVO</strong> i. V. m.
-        gewerberechtlichen Pflichten nach § 34 i GewO.
+        <strong>Art. 6 Abs. 1 lit. b DSGVO</strong> (vorvertragliche Maßnahmen) sowie{" "}
+        <strong>Art. 6 Abs. 1 lit. a DSGVO</strong> (Einwilligung über die Checkbox).
       </p>
       <h3>Speicherdauer</h3>
       <p>
         Wir löschen Ihre Anfrage, sobald sie nicht mehr erforderlich ist und keine gesetzlichen
-        Aufbewahrungspflichten entgegenstehen. Bei vermittelten Darlehensverträgen gelten
-        handels- und steuerrechtliche Aufbewahrungsfristen (regelmäßig 6 bzw. 10 Jahre, §§ 257 HGB,
-        147 AO) sowie die Dokumentationspflichten der ImmVermV (5 Jahre).
+        Aufbewahrungspflichten entgegenstehen — spätestens jedoch nach{" "}
+        <span className="placeholder">36 Monaten</span> ohne weiteren Kontakt.
       </p>
 
       <h2>
@@ -149,28 +144,21 @@ export default function DatenschutzPage() {
         Zwecken findet nicht statt. Wir geben Ihre personenbezogenen Daten nur weiter, wenn:
       </p>
       <ul>
-        <li>Sie ausdrücklich eingewilligt haben (Art. 6 Abs. 1 lit. a DSGVO),</li>
         <li>
-          die Weitergabe zur Vertragserfüllung erforderlich ist (Art. 6 Abs. 1 lit. b DSGVO) — etwa
-          an finanzierende Banken, Sparkassen, Versicherer, Bausparkassen oder die KfW
-          Bankengruppe im Rahmen der Finanzierungsanfrage,
+          Sie ausdrücklich eingewilligt haben (Art. 6 Abs. 1 lit. a DSGVO),
         </li>
         <li>
-          eine gesetzliche Verpflichtung besteht (Art. 6 Abs. 1 lit. c DSGVO) — z. B. nach Geldwäschegesetz,
+          die Weitergabe zur Vertragserfüllung erforderlich ist (Art. 6 Abs. 1 lit. b DSGVO) — etwa an
+          ausgewählte Bauträger, Banken, Steuerberater oder Hausverwaltungen, sofern Sie dies für den
+          Investment-Check explizit wünschen,
+        </li>
+        <li>
+          eine gesetzliche Verpflichtung besteht (Art. 6 Abs. 1 lit. c DSGVO),
         </li>
         <li>
           die Weitergabe zur Wahrung berechtigter Interessen zulässig ist (Art. 6 Abs. 1 lit. f DSGVO).
         </li>
       </ul>
-
-      <h3>Bonitäts- und Schufa-Auskünfte</h3>
-      <p>
-        Im Rahmen der Vermittlung von Verbraucher- und Immobiliardarlehen kann es erforderlich sein,
-        bei Auskunfteien (z. B. SCHUFA Holding AG, CRIF GmbH, infoscore Consumer Data GmbH) Bonitäts-
-        und Identifikationsauskünfte einzuholen. Dies erfolgt ausschließlich nach Ihrer ausdrücklichen
-        Einwilligung. Über die Datenverarbeitung der jeweiligen Auskunftei werden Sie vor Erteilung
-        der Einwilligung gesondert informiert.
-      </p>
 
       <h2>
         <span className="num">08</span>Cookies

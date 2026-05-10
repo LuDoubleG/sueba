@@ -9,19 +9,10 @@ import { MagneticButton } from "@/components/ui/magnetic-button";
 
 const ease = [0.2, 0.7, 0.2, 1] as const;
 
-const cardMedia = [
-  {
-    src: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=82",
-    alt: "Modernes Einfamilienhaus mit heller Fassade — Beispiel Erstfinanzierung Eigenheim mit KfW 300 Wohneigentum für Familien"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1400&q=82",
-    alt: "Etablierte Bestandsimmobilie im Abendlicht — Beispiel Anschlussfinanzierung und Forward-Darlehen bei auslaufender Zinsbindung"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1400&q=82",
-    alt: "Modernisierung und energetische Sanierung eines Wohngebäudes — Beispiel Modernisierungskredit kombiniert mit KfW 261 Klimafreundlicher Neubau"
-  }
+const images = [
+  "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1400&q=80"
 ];
 
 export function Portfolio() {
@@ -39,28 +30,27 @@ export function Portfolio() {
         <div className="grid gap-6 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-7">
             <h2 className="headline text-[12vw] text-bone sm:text-[9vw] lg:text-[6.4vw] xl:text-[100px]">
-              Drei Wege<br />
-              <span className="italic text-gradient-warm">zur richtigen Rate.</span>
+              Was Immobilien<br />
+              <span className="italic text-gradient-warm">aufbauen können.</span>
             </h2>
           </div>
           <div className="lg:col-span-4 lg:col-start-9 lg:pt-6">
             <p className="text-balance text-base leading-relaxed text-bone/70">
-              Drei typische Finanzierungs-Szenarien, mit denen wir täglich arbeiten — von der Erstfinanzierung
-              über Anschluss bis zur Modernisierung. Welche Struktur zu Ihrer Situation passt, klären wir
-              im persönlichen Gespräch.
+              Drei typische Strategie-Profile, mit denen sich Vermögen über Immobilien strukturieren lässt.
+              Welche Strategie zu Ihrer Situation passt, klären wir im persönlichen Gespräch.
             </p>
           </div>
         </div>
 
-        {/* Disclaimer-Banner — Konditionen sind nicht garantiert, hängen von Bonität & Markt ab */}
+        {/* Disclaimer-Banner — klar erkennbar, dass es sich nicht um Bestandsobjekte handelt */}
         <div className="mt-10 flex items-start gap-3 rounded-2xl border border-gold/25 bg-gold/[0.06] p-4 md:mt-12 md:items-center md:p-5">
           <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gold/35 bg-gold/15 text-gold">
             <Info className="h-4 w-4" strokeWidth={2.2} />
           </span>
           <p className="text-[13px] leading-relaxed text-bone/80 md:text-[14px]">
-            <strong className="font-medium text-bone">Beispielhafte Szenarien.</strong> Konkrete Konditionen,
-            Beleihungsausläufe und Förderfähigkeit hängen von Bonität, Eigenkapital, Objekt und Markt ab —{" "}
-            <strong className="text-bone">individuelle Prüfung im kostenlosen Konditions-Check</strong>.
+            <strong className="font-medium text-bone">Beispielhafte Darstellung.</strong> Die folgenden
+            Profile sind <strong className="text-bone">keine konkreten Objekte aus unserem Bestand</strong>,
+            sondern illustrieren typische Strategien, mit denen sich Vermögen über Immobilien aufbauen lässt.
           </p>
         </div>
 
@@ -75,8 +65,7 @@ export function Portfolio() {
               risk={p.risk}
               horizon={p.horizon}
               hint={p.hint}
-              image={cardMedia[i].src}
-              imageAlt={cardMedia[i].alt}
+              image={images[i]}
             />
           ))}
         </div>
@@ -90,14 +79,13 @@ export function Portfolio() {
           className="mt-16 flex flex-col items-start gap-5 rounded-[28px] border border-bone/15 bg-coal p-6 md:flex-row md:items-center md:justify-between md:p-8"
         >
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-wide3 text-gold">Welches Szenario passt zu Ihnen?</p>
+            <p className="font-mono text-[10px] uppercase tracking-wide3 text-gold">Welches Objekt passt zu Ihnen?</p>
             <p className="mt-2 max-w-xl text-[15px] leading-snug text-bone md:text-base">
-              Wir prüfen kostenfrei und neutral, welche Bank, welche Tilgung und welche Zinsbindung zu Ihrer Bonität,
-              Liquidität und Lebensplanung passen.
+              Lassen Sie uns gemeinsam herausfinden, welche Immobilie zu Ihrer Bonität, Strategie und Liquidität passt — kostenlos & unverbindlich.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3">
-            <MagneticButton href="#kontakt" size="lg">Konditionen kostenlos prüfen</MagneticButton>
+            <MagneticButton href="#kontakt" size="lg">Passendes Objekt finden</MagneticButton>
             <a
               href="tel:+4962139993141"
               className="cta-ghost inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm"
@@ -120,8 +108,7 @@ function PortfolioCard({
   risk,
   horizon,
   hint,
-  image,
-  imageAlt
+  image
 }: {
   index: number;
   title: string;
@@ -131,7 +118,6 @@ function PortfolioCard({
   horizon: string;
   hint: string;
   image: string;
-  imageAlt: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const rx = useMotionValue(0);
@@ -171,14 +157,7 @@ function PortfolioCard({
     >
       <div className="relative h-72 w-full overflow-hidden rounded-2xl">
         <motion.div className="absolute inset-0" whileHover={{ scale: 1.05 }} transition={{ duration: 0.8, ease }}>
-          <Image
-            src={image}
-            alt={imageAlt}
-            fill
-            className="object-cover transition-transform duration-700 group-hover:scale-110"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            loading="lazy"
-          />
+          <Image src={image} alt={`Beispielhafte Darstellung — ${title}`} fill className="object-cover transition-transform duration-700 group-hover:scale-110" sizes="(max-width: 768px) 100vw, 33vw" />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
 
@@ -198,10 +177,10 @@ function PortfolioCard({
 
       <div className="flex flex-1 flex-col justify-between p-5">
         <dl className="grid grid-cols-2 gap-y-4 text-[12px] tracking-tight text-bone/80">
-          <Spec label="Vorhaben" value={locationType} />
-          <Spec label="Konditionsprofil" value={risk} />
-          <Spec label="Empfehlung" value={horizon} />
-          <Spec label="Szenario-Profil" value={String(index + 1).padStart(2, "0") + " / 03"} />
+          <Spec label="Standorttyp" value={locationType} />
+          <Spec label="Risikoprofil" value={risk} />
+          <Spec label="Zeithorizont" value={horizon} />
+          <Spec label="Strategie-Profil" value={String(index + 1).padStart(2, "0") + " / 03"} />
         </dl>
         <p className="mt-6 rounded-xl border border-bone/10 bg-bone/[0.02] px-3 py-2.5 text-[11px] leading-relaxed text-bone/65">
           {hint}
@@ -211,7 +190,7 @@ function PortfolioCard({
       {/* Footer-Disclaimer in der Card selbst — auch im Scroll sichtbar */}
       <p className="mx-3 mb-3 -mt-2 inline-flex items-center gap-1.5 rounded-lg bg-bone/[0.03] px-2.5 py-1.5 font-mono text-[9.5px] uppercase tracking-wide3 text-bone/55">
         <Info className="h-3 w-3 text-gold/70" strokeWidth={2.2} />
-        Beispielszenario — Konditionen bonitätsabhängig
+        Beispielhafte Darstellung — kein Bestandsobjekt
       </p>
     </motion.article>
   );

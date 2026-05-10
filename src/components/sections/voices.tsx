@@ -9,12 +9,12 @@ import { MagneticButton } from "@/components/ui/magnetic-button";
 const ease = [0.2, 0.7, 0.2, 1] as const;
 
 const tickerWords = [
-  "400+ Banken im Vergleich",
-  "Bestzins · keine Hausbankfalle",
-  "Forward-Strategie · Anschluss-Sicherung",
-  "KfW & Landesförderung integriert",
-  "Schufa-neutrale Konditionsabfrage",
-  "Persönlich statt Lead-Maschine"
+  "Strategie vor Objekt",
+  "Substanz vor Versprechen",
+  "Standort · Mietmarkt · Finanzierung",
+  "Kein Verkaufsdruck",
+  "Chancen-Risiko-Bewertung",
+  "Renditepotenzial statt Renditeversprechen"
 ];
 
 export function Voices() {
@@ -38,18 +38,17 @@ export function Voices() {
             <span className="dot" />
             <span>06 — Voices</span>
           </div>
-          <span>Vertrauen durch Klartext</span>
+          <span>Vertrauen durch Substanz</span>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-5">
             <h2 className="headline text-5xl text-bone md:text-6xl lg:text-[72px]">
-              Was Kundinnen<br />
-              <span className="italic text-gradient-warm">und Kunden sagen.</span>
+              Was Anlegerinnen<br />
+              <span className="italic text-gradient-warm">und Anleger sagen.</span>
             </h2>
             <p className="mt-6 max-w-md text-bone/70">
-              Unsere Kundinnen und Kunden schätzen vor allem die transparente Konditionsanalyse, ehrliche Tilgungs-Empfehlung
-              und persönliche Begleitung — von Erstantrag bis Auszahlung.
+              Unsere Kundinnen und Kunden schätzen vor allem Struktur, Ehrlichkeit und klare Chancen-Risiko-Abwägung.
             </p>
           </div>
 
@@ -88,9 +87,9 @@ export function Voices() {
         >
           <div className="grid gap-6 md:grid-cols-[1.2fr_auto] md:items-center md:gap-10">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-wide3 text-gold">Bereit für Ihren Bestzins?</p>
+              <p className="font-mono text-[10px] uppercase tracking-wide3 text-gold">Bereit für die nächste Stufe?</p>
               <h3 className="mt-3 text-3xl text-bone md:text-4xl lg:text-5xl" style={{ fontFamily: "var(--font-display)", lineHeight: 1.05, letterSpacing: "-0.015em" }}>
-                Sichern Sie Ihren <span className="italic text-gradient-warm">kostenlosen Konditions-Check.</span>
+                Sichern Sie Ihren <span className="italic text-gradient-warm">kostenlosen Investment-Check.</span>
               </h3>
               <p className="mt-3 text-sm text-bone/65 md:text-base">
                 In 60 Sekunden anfragen. Persönliche Antwort innerhalb von 24 Stunden — ohne Verkaufsdruck.
@@ -98,7 +97,7 @@ export function Voices() {
             </div>
             <div className="flex flex-col items-stretch gap-3 md:items-end">
               <MagneticButton href="#kontakt" size="lg" pulse>
-                Bestzins kostenlos sichern
+                Jetzt kostenlos sichern
               </MagneticButton>
               <a
                 href="tel:+4962139993141"

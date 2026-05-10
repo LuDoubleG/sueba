@@ -10,12 +10,12 @@ const ease = [0.2, 0.7, 0.2, 1] as const;
 const solutionIcons = [Building2, HandCoins, ShieldCheck, Landmark, Coins, Sparkles];
 
 const differentiators = [
-  "400+ Banken im strukturierten Vergleich — nicht nur Hausbank",
-  "Schufa-neutrale Konditionsabfrage vor Erstantrag",
-  "KfW-Förderung & Landesprogramme integriert geprüft",
-  "Tilgungs-, Sondertilgungs- & Forward-Strategien individuell",
-  "Konditions-Stresstest für Anschlussfinanzierung",
-  "Persönliche Begleitung bis Auszahlung — keine Lead-Maschine"
+  "Wir starten mit Strategie statt Objektverkauf",
+  "Standortprüfung mit nachvollziehbaren Kriterien",
+  "Mietmarktanalyse und Vermietbarkeit im Fokus",
+  "Finanzierungslogik passend zu Ihrer Liquidität",
+  "Chancen-Risiko-Bewertung vor jeder Empfehlung",
+  "Begleitung bis zum Kauf — mit Fachpartnern für Finanzierung, Steuern, Verwaltung"
 ];
 
 export function Framework() {
@@ -35,22 +35,21 @@ export function Framework() {
             <span className="dot" />
             <span>03 — Ansatz</span>
           </div>
-          <span>Unsere Finanzierungs-Logik</span>
+          <span>Unsere Investment-Logik</span>
         </div>
 
         {/* huge editorial headline split across rows */}
         <motion.div style={{ y: headlineY }} className="grid gap-6 lg:grid-cols-12">
           <div className="lg:col-span-9">
             <h2 className="headline text-[13vw] text-bone sm:text-[10vw] lg:text-[7.4vw] xl:text-[120px]">
-              Vier Hebel.
+              Vier Säulen.
               <br />
-              <span className="italic text-gradient-warm">Eine Kondition.</span>
+              <span className="italic text-gradient-warm">Eine Entscheidung.</span>
             </h2>
           </div>
           <div className="lg:col-span-3 lg:pt-8">
             <p className="text-balance text-base leading-relaxed text-bone/70">
-              Jede Finanzierung wird entlang dieser vier Faktoren strukturiert, damit Bestzins, Tilgungslogik und Risikopuffer
-              wirklich zu Ihrer Lebenssituation passen — bevor die erste Bank angefragt wird.
+              Jede Empfehlung wird entlang dieser vier Faktoren bewertet, damit Chancen und Risiken transparent bleiben — bevor das erste Objekt im Raum steht.
             </p>
           </div>
         </motion.div>
@@ -67,11 +66,11 @@ export function Framework() {
           <div className="lg:col-span-5">
             <p className="eyebrow mb-6">Differenzierung</p>
             <h3 className="headline text-4xl text-bone md:text-5xl lg:text-6xl">
-              Nicht jeder Zins<br />
-              <span className="italic text-gradient-warm">ist Bestzins.</span>
+              Nicht jede Immobilie<br />
+              <span className="italic text-gradient-warm">ist ein Investment.</span>
             </h3>
             <p className="mt-6 max-w-md text-bone/70">
-              Unser Ansatz trennt Verkauf von Vergleich. Wir prüfen zuerst, welche Bank zu Ihrer Bonität, Ihrem Vorhaben und Ihrer Lebensplanung passt — bevor ein Antrag rausgeht.
+              Unser Ansatz trennt Verkauf von Eignung. Wir prüfen zuerst, ob ein Objekt strategisch zu Ihrer Situation passt, bevor ein Kauf überhaupt sinnvoll wird.
             </p>
             <ul className="mt-10 space-y-4">
               {differentiators.map((d, i) => (
@@ -99,7 +98,7 @@ export function Framework() {
           </div>
 
           <div className="lg:col-span-7">
-            <p className="eyebrow mb-6">Was wir leisten</p>
+            <p className="eyebrow mb-6">Was Immobilien können</p>
             <div className="grid gap-3 sm:grid-cols-2">
               {solutions.map((s, i) => {
                 const Icon = solutionIcons[i % solutionIcons.length];

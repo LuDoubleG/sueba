@@ -11,10 +11,10 @@ type FormValues = {
   lastName: string;
   email: string;
   phone: string;
-  loanAmount: string;
+  budget: string;
   monthlyCapital: string;
   goals: string[];
-  employment: string;
+  hasProperty: string;
   message: string;
   privacy: boolean;
 };
@@ -24,10 +24,10 @@ const initialState: FormValues = {
   lastName: "",
   email: "",
   phone: "",
-  loanAmount: "",
+  budget: "",
   monthlyCapital: "",
   goals: [],
-  employment: "",
+  hasProperty: "",
   message: "",
   privacy: false
 };
@@ -38,17 +38,7 @@ export function Contact() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const goals = useMemo(
-    () => [
-      "Hauskauf / Erstfinanzierung",
-      "Anschlussfinanzierung",
-      "Forward-Darlehen",
-      "Modernisierung / Sanierung",
-      "Privatkredit",
-      "Konditions-Check Bestand"
-    ],
-    []
-  );
+  const goals = useMemo(() => ["Altersvorsorge", "Vermögensaufbau", "Steuern optimieren", "Mieteinnahmen", "Diversifikation"], []);
 
   const validate = () => {
     const next: Partial<Record<keyof FormValues, string>> = {};
@@ -56,7 +46,7 @@ export function Contact() {
     if (!values.lastName.trim()) next.lastName = "Bitte Nachnamen angeben.";
     if (!/\S+@\S+\.\S+/.test(values.email)) next.email = "Bitte gültige E-Mail eintragen.";
     if (!values.phone.trim()) next.phone = "Bitte Telefonnummer angeben.";
-    if (values.goals.length === 0) next.goals = "Bitte mindestens ein Vorhaben wählen.";
+    if (values.goals.length === 0) next.goals = "Bitte mindestens ein Ziel wählen.";
     if (!values.privacy) next.privacy = "Bitte stimmen Sie der Datenverarbeitung zu.";
     return next;
   };
@@ -95,7 +85,7 @@ export function Contact() {
             <span className="dot" />
             <span>07 — Kontakt</span>
           </div>
-          <span>Konditions-Check · kostenlos</span>
+          <span>Investment-Check · kostenlos</span>
         </div>
 
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-20">
@@ -112,19 +102,18 @@ export function Contact() {
             </span>
             <h2 className="mt-5 headline text-5xl text-bone md:text-6xl lg:text-[80px]">
               Sichern Sie Ihren<br />
-              <span className="italic text-gradient-warm">kostenlosen Konditions-Check.</span>
+              <span className="italic text-gradient-warm">kostenlosen Investment-Check.</span>
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-bone/75 md:text-lg">
-              Süba Dragon Wohnbau aus Mannheim meldet sich für ein unverbindliches Erstgespräch — und vergleicht für Sie
-              <strong className="font-medium text-bone"> Konditionen aus über 400 Banken deutschlandweit</strong>, abgestimmt auf
-              Ihre Bonität und Ihr Vorhaben.
+              Süba Dragon Wohnbau aus Mannheim meldet sich für ein unverbindliches Erstgespräch — und prüft mit Ihnen, welche
+              <strong className="font-medium text-bone"> Anlageimmobilien-Strategie deutschlandweit zu Ihrer Situation passt</strong>.
             </p>
 
             <ul className="mt-10 space-y-1">
               {[
-                ["01", "100 % kostenlos & unverbindlich", "Vergütung über die Bank"],
-                ["02", "Schufa-neutrale Konditionsabfrage", "vor jeder Bank-Anfrage"],
-                ["03", "400+ Banken im Vergleich", "inkl. KfW & Landesförderung"],
+                ["01", "100 % kostenlos & unverbindlich", "kein Vertrag, kein Risiko"],
+                ["02", "Persönliche Strategie", "auf Ihre Bonität zugeschnitten"],
+                ["03", "Klare Risiko-Einordnung", "Best-, Base- und Stress-Szenario"],
                 ["04", "Antwort innerhalb 24 Stunden", "auch am Wochenende"]
               ].map(([k, v, sub]) => (
                 <li key={k} className="flex items-start gap-4 border-b border-bone/10 py-4 text-bone/85">
@@ -179,13 +168,13 @@ export function Contact() {
                 <Field label="Telefon" value={values.phone} onChange={(v) => setValues({ ...values, phone: v })} error={errors.phone} />
               </div>
               <div className="grid gap-5 sm:grid-cols-2">
-                <Field label="Darlehenssumme" placeholder="z.B. 350.000 EUR" value={values.loanAmount} onChange={(v) => setValues({ ...values, loanAmount: v })} />
-                <Field label="Monatliche Wunschrate" placeholder="z.B. 1.400 EUR" value={values.monthlyCapital} onChange={(v) => setValues({ ...values, monthlyCapital: v })} />
+                <Field label="Investitionsbudget" placeholder="z.B. 150.000 – 300.000 EUR" value={values.budget} onChange={(v) => setValues({ ...values, budget: v })} />
+                <Field label="Monatlich verfügbar" placeholder="z.B. 800 EUR" value={values.monthlyCapital} onChange={(v) => setValues({ ...values, monthlyCapital: v })} />
               </div>
 
               <div>
                 <div className="flex items-baseline justify-between gap-3">
-                  <Label>Vorhaben <span className="text-bone/40">(Mehrfachauswahl möglich)</span></Label>
+                  <Label>Ziel <span className="text-bone/40">(Mehrfachauswahl möglich)</span></Label>
                   {values.goals.length > 0 ? (
                     <span className="font-mono text-[10px] uppercase tracking-wide3 text-gold">
                       {values.goals.length} ausgewählt
@@ -225,7 +214,7 @@ export function Contact() {
                 {errors.goals ? <p className="mt-2 text-[11px] text-ember">{errors.goals}</p> : null}
               </div>
 
-              <Field label="Beschäftigungsverhältnis" placeholder="z.B. Angestellt seit 2018, unbefristet" value={values.employment} onChange={(v) => setValues({ ...values, employment: v })} />
+              <Field label="Bereits Immobilien?" value={values.hasProperty} onChange={(v) => setValues({ ...values, hasProperty: v })} />
 
               <div>
                 <Label>Nachricht</Label>
@@ -281,8 +270,8 @@ export function Contact() {
                     </>
                   ) : (
                     <>
-                      <span className="md:hidden">Konditions-Check kostenlos sichern</span>
-                      <span className="hidden md:inline">Jetzt kostenlosen Konditions-Check sichern</span>
+                      <span className="md:hidden">Investment-Check kostenlos sichern</span>
+                      <span className="hidden md:inline">Jetzt kostenlosen Investment-Check sichern</span>
                     </>
                   )}
                 </span>
@@ -292,7 +281,7 @@ export function Contact() {
               </p>
               {success ? (
                 <p className="rounded-2xl border border-gold/35 bg-gold/10 p-4 text-[13px] text-bone">
-                  Vielen Dank. Wir melden uns innerhalb der nächsten 24 Stunden mit einer ersten Konditionsindikation — unverbindlich und kostenfrei.
+                  Vielen Dank. Wir melden uns innerhalb der nächsten 24 Stunden für die individuelle Erstprüfung — unverbindlich und kostenfrei.
                 </p>
               ) : null}
             </form>

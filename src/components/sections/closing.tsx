@@ -20,8 +20,8 @@ export function Closing() {
           transition={{ duration: 0.9, ease }}
           className="headline mx-auto max-w-[1200px] text-center text-[13vw] text-bone sm:text-[10vw] lg:text-[8vw] xl:text-[140px]"
         >
-          Bestzins <br />
-          <span className="italic text-gradient-warm">beginnt mit Vergleich.</span>
+          Kapitalanlage <br />
+          <span className="italic text-gradient-warm">beginnt mit Klarheit.</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 18 }}
@@ -30,14 +30,13 @@ export function Closing() {
           transition={{ delay: 0.2, duration: 0.7, ease }}
           className="mx-auto mt-8 max-w-2xl text-center text-base leading-relaxed text-bone/75 md:mt-10 md:text-lg"
         >
-          Starten Sie mit einem neutralen Konditionsvergleich aus 400+ Banken statt mit dem Hausbank-Bauchgefühl.
-          Wir zeigen Ihnen kostenlos, welche Bank, welche Tilgung und welche Zinsbindung wirklich zu Ihnen passt —
-          ohne Verkaufsdruck und ohne Verpflichtung.
+          Starten Sie mit einer qualifizierten Analyse statt mit Bauchgefühl. Wir zeigen Ihnen kostenlos, welche Optionen
+          zu Ihrer Situation passen — ohne Verkaufsdruck und ohne Verpflichtung.
         </motion.p>
         <div className="mt-10 flex flex-col items-center gap-4">
           <div className="flex flex-wrap justify-center gap-3">
             <MagneticButton href="#kontakt" size="lg" pulse>
-              Bestzins kostenlos sichern
+              Jetzt kostenlos analysieren lassen
             </MagneticButton>
             <MagneticButton href="tel:+4962139993141" variant="ghost" size="lg">
               0621 3999 3141

@@ -77,16 +77,16 @@ export function LegalShell({ index, eyebrow, title, intro, updated, children }: 
             {/* Footer-ähnliche Action-Bar */}
             <div className="mx-auto mt-16 flex max-w-3xl flex-col items-start gap-4 rounded-2xl border border-bone/10 bg-bone/[0.02] p-6 md:flex-row md:items-center md:justify-between">
               <div>
-                  <p className="font-mono text-[10px] uppercase tracking-wide3 text-gold">Fragen zur Finanzierung?</p>
-                  <p className="mt-1.5 text-[14px] text-bone/80">
-                    Persönliches Erstgespräch — kostenlos & unverbindlich.
-                  </p>
-                </div>
-                <Link
-                  href="/#kontakt"
-                  className="cta-primary group inline-flex items-center gap-2 rounded-full px-5 py-3 text-[13px] font-semibold tracking-tight"
-                >
-                  <span className="relative z-10">Konditions-Check sichern</span>
+                <p className="font-mono text-[10px] uppercase tracking-wide3 text-gold">Fragen zum Investment?</p>
+                <p className="mt-1.5 text-[14px] text-bone/80">
+                  Persönliches Erstgespräch — kostenlos & unverbindlich.
+                </p>
+              </div>
+              <Link
+                href="/#kontakt"
+                className="cta-primary group inline-flex items-center gap-2 rounded-full px-5 py-3 text-[13px] font-semibold tracking-tight"
+              >
+                <span className="relative z-10">Investment-Check sichern</span>
                 <span className="relative z-10 font-mono text-[10px]">→</span>
               </Link>
             </div>

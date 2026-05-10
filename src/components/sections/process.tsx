@@ -8,10 +8,10 @@ import { MagneticButton } from "@/components/ui/magnetic-button";
 const ease = [0.2, 0.7, 0.2, 1] as const;
 
 const stepDetails = [
-  "Ein offener Erstdialog. Wir hören zu, klären Ihr Vorhaben und zeigen, ob eine Finanzierung jetzt überhaupt der richtige Schritt ist.",
-  "Wir strukturieren Einkommen, Eigenkapital, Sicherheiten und Haushaltsrechnung — Schufa-neutral und vor jeder Bank-Anfrage.",
-  "Aus 400+ Banken und Förderprogrammen filtern wir die 3–5 besten Konditionen — mit transparenter Chancen-Risiko-Bewertung.",
-  "Von Antragsdokumentation über Bewertung bis zur Auszahlung begleiten wir Sie durchgängig — und planen die Anschlussstrategie mit."
+  "Ein offener Erstdialog. Wir hören zu, ordnen ein und zeigen, ob ein nächster Schritt überhaupt sinnvoll ist.",
+  "Wir prüfen Ziele, Bonität, Liquidität und Steuersituation — als Grundlage für eine tragfähige Strategie.",
+  "Aus geprüften Objekten wählen wir nur die aus, die zu Ihrer Strategie passen — mit klarer Chancen-Risiko-Sicht.",
+  "Vom Notar bis zur Übergabe begleiten wir den Prozess und vernetzen mit Finanzierung, Steuern und Verwaltung."
 ];
 
 export function Process() {
@@ -38,11 +38,10 @@ export function Process() {
             <p className="eyebrow mb-6">Vorgehen</p>
             <h2 className="headline text-5xl text-bone md:text-6xl lg:text-7xl">
               Vom Gespräch <br />
-              <span className="italic text-gradient-warm">zur Auszahlung.</span>
+              <span className="italic text-gradient-warm">zur Übergabe.</span>
             </h2>
             <p className="mt-8 max-w-md text-bone/70">
-              Klarer Ablauf, realistische Konditions-Einordnung und Begleitung bis Notartermin und Auszahlung. Nichts wird
-              übersprungen, nichts wird beschönigt.
+              Klarer Ablauf, realistische Einordnung und Begleitung bis zur Umsetzung. Nichts wird übersprungen, nichts wird beschönigt.
             </p>
             <div className="mt-10 space-y-3">
               <MagneticButton href="#kontakt" size="lg" pulse>

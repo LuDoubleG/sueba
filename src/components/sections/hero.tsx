@@ -8,10 +8,10 @@ import { MagneticButton } from "@/components/ui/magnetic-button";
 import { CityRotator } from "@/components/effects/city-rotator";
 
 const lines: { kind: "sans" | "serif"; text: string; align?: "left" | "right" | "center" }[] = [
-  { kind: "sans", text: "Konditionen", align: "left" },
-  { kind: "serif", text: "ohne Aufschlag.", align: "left" },
-  { kind: "sans", text: "Strategie", align: "right" },
-  { kind: "serif", text: "ohne Bankendruck.", align: "right" }
+  { kind: "sans", text: "Strategie", align: "left" },
+  { kind: "serif", text: "vor Objekt.", align: "left" },
+  { kind: "sans", text: "Substanz", align: "right" },
+  { kind: "serif", text: "vor Versprechen.", align: "right" }
 ];
 
 const ease = [0.2, 0.7, 0.2, 1] as const;
@@ -47,11 +47,11 @@ export function Hero() {
           <span className="dot" />
           <span>Süba Dragon Wohnbau GmbH</span>
           <span className="text-bone/30">/</span>
-          <span>Baufinanzierung &amp; Kredite — deutschlandweit</span>
+          <span>Anlageimmobilien deutschlandweit</span>
         </div>
         <div className="hidden items-center gap-6 lg:flex">
           <span className="inline-flex items-center gap-2">
-            <span>Bestzins für</span>
+            <span>Aktuell aktiv in</span>
             <CityRotator />
           </span>
         </div>
@@ -67,7 +67,7 @@ export function Hero() {
             <div className="mb-2 flex items-center gap-2 md:hidden">
               <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold/[0.08] px-2.5 py-1 font-mono text-[10px] uppercase tracking-wide3 text-gold">
                 <Building2 className="h-3 w-3" />
-                Baufinanzierung · Deutschlandweit
+                Anlageimmobilien · Deutschlandweit
               </span>
             </div>
 
@@ -75,32 +75,23 @@ export function Hero() {
             <div className="mb-3 hidden items-center gap-3 md:flex md:justify-center lg:mb-4 lg:justify-start">
               <div className="flex -space-x-1.5">
                 {[
-                  {
-                    src: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=140&q=80",
-                    alt: "Modernes Einfamilienhaus — Erstfinanzierung"
-                  },
-                  {
-                    src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=140&q=80",
-                    alt: "Bestandsimmobilie — Anschlussfinanzierung"
-                  },
-                  {
-                    src: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=140&q=80",
-                    alt: "Energetische Sanierung — Modernisierungskredit mit KfW-Förderung"
-                  }
-                ].map((m, i) => (
+                  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=140&q=80",
+                  "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=140&q=80",
+                  "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=140&q=80"
+                ].map((src, i) => (
                   <div key={i} className="relative h-6 w-6 overflow-hidden rounded-full border-2 border-ink ring-1 ring-bone/15">
-                    <Image src={m.src} alt={m.alt} fill className="object-cover" sizes="24px" />
+                    <Image src={src} alt="" fill className="object-cover" sizes="24px" />
                   </div>
                 ))}
               </div>
               <span className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-wide3 text-bone/70">
                 <Building2 className="h-3 w-3 text-gold" />
-                Baufinanzierung · 400+ Banken · Deutschlandweit
+                Anlageimmobilien · Deutschlandweit
               </span>
             </div>
 
             <h1
-              aria-label="Baufinanzierung, Anschlussfinanzierung und Privatkredite — neutral verglichen aus über 400 Banken in Mannheim, Frankfurt, Stuttgart, München, Berlin, Hamburg und deutschlandweit. Süba Dragon Wohnbau GmbH."
+              aria-label="Immobilien als Kapitalanlage in Mannheim, Frankfurt, Stuttgart, München, Berlin, Hamburg und deutschlandweit – Süba Dragon Wohnbau GmbH"
               className="relative text-bone text-[clamp(38px,10vw,52px)] md:text-[clamp(48px,6.4vw,72px)] lg:text-[clamp(56px,7.2vw,104px)]"
               style={{
                 fontFamily: "var(--font-display)",
@@ -118,11 +109,10 @@ export function Hero() {
 
             {/* SEO-relevanter Untertitel für Crawler */}
             <p className="sr-only">
-              Süba Dragon Wohnbau GmbH — unabhängige Vermittlung von Baufinanzierung, Anschlussfinanzierung,
-              Forward-Darlehen, KfW-Förderung, Modernisierungskrediten und Privatkrediten. Vergleich aus über
-              400 Banken, Sparkassen, Versicherern und Bausparkassen. Kostenlose persönliche Beratung in
-              Mannheim, Heidelberg, Ludwigshafen, Frankfurt am Main, Stuttgart, Karlsruhe, Köln, Düsseldorf,
-              Hamburg, Berlin, München, Leipzig, Dresden, Nürnberg, Hannover und deutschlandweit.
+              Süba Dragon Wohnbau GmbH — strategische Vermittlung von Immobilien als Kapitalanlage. Anlageimmobilien,
+              Renditeobjekte, Bestand und Neubau in Mannheim, Heidelberg, Ludwigshafen, Frankfurt am Main, Stuttgart,
+              Karlsruhe, Köln, Düsseldorf, Hamburg, Berlin, München, Leipzig, Dresden, Nürnberg, Hannover und weiteren
+              deutschen Städten.
             </p>
 
             {/* MOBILE Property Visual Card — UNTER Headline */}
@@ -146,8 +136,8 @@ export function Hero() {
               {/* Image header — kompakter, damit ActionBlock drunter passt */}
               <div className="relative h-[240px] overflow-hidden xl:h-[280px]">
                 <Image
-                  src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=88"
-                  alt="Modernes Einfamilienhaus in Deutschland — Beispielrechnung Baufinanzierung mit 15-jähriger Zinsbindung, 400+ Banken im Vergleich, KfW-Förderung integriert. Süba Dragon Wohnbau."
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=88"
+                  alt="Anlageimmobilie · Beispielobjekt"
                   fill
                   priority
                   className="object-cover"
@@ -157,26 +147,26 @@ export function Hero() {
 
                 <div className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-gold/40 bg-coal/80 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wide3 text-gold backdrop-blur">
                   <Building2 className="h-3 w-3" />
-                  Beispielrechnung
+                  Beispielhafte Darstellung
                 </div>
                 <div className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-bone/15 bg-coal/80 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wide3 text-bone backdrop-blur">
                   <span className="dot" />
-                  Bestzins-Indikation
+                  Anlageimmobilie
                 </div>
 
                 <div className="absolute bottom-3 left-3 right-3 flex items-end justify-between gap-3">
                   <div>
-                    <p className="font-mono text-[10px] uppercase tracking-wide3 text-bone/70">Zinsbindung 15 Jahre</p>
+                    <p className="font-mono text-[10px] uppercase tracking-wide3 text-bone/70">Standortprofil</p>
                     <p
                       className="text-[30px] leading-none text-bone"
                       style={{ fontFamily: "var(--font-display)" }}
                     >
-                      ab <span className="italic text-gold">3,12 % eff.</span>
+                      Wertstabile <span className="italic text-gold">Lage</span>
                     </p>
                   </div>
                   <div className="rounded-xl border border-bone/15 bg-coal/75 px-2.5 py-1.5 text-right backdrop-blur">
-                    <p className="font-mono text-[9px] uppercase tracking-wide3 text-ash">Stand</p>
-                    <p className="font-mono text-[13px] text-bone">live</p>
+                    <p className="font-mono text-[9px] uppercase tracking-wide3 text-ash">Mietnachfrage</p>
+                    <p className="font-mono text-[13px] text-bone">stabil</p>
                   </div>
                 </div>
               </div>
@@ -184,16 +174,16 @@ export function Hero() {
               {/* Data section — extra kompakt */}
               <div className="p-3.5 xl:p-4">
                 <div className="flex items-center justify-between border-b border-bone/10 pb-2">
-                  <span className="font-mono text-[10px] uppercase tracking-wide3 text-ash">Konditions-Monitor</span>
+                  <span className="font-mono text-[10px] uppercase tracking-wide3 text-ash">Investment Monitor</span>
                   <span className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-wide3 text-bone/80">
-                    <span className="dot" /> tagesaktuell
+                    <span className="dot" /> live
                   </span>
                 </div>
                 <div className="mt-2.5 space-y-2">
                   {[
-                    { k: "Banken im Vergleich", v: 92 },
-                    { k: "KfW-Förderprüfung", v: 100 },
-                    { k: "Bonitätsstrukturierung", v: 88 }
+                    { k: "Standortqualität", v: 86 },
+                    { k: "Mietpotenzial", v: 74 },
+                    { k: "Finanzierung", v: 92 }
                   ].map((b, i) => (
                     <div key={b.k}>
                       <div className="mb-1 flex items-center justify-between font-mono text-[10px] uppercase tracking-wide3 text-ash">
@@ -235,13 +225,13 @@ function HeroActionBlock() {
     >
       {/* Mobile: kürzer. Desktop: prägnante Subline (Stadt-Mentions sind in sr-only + JSON-LD). */}
       <p className="hidden text-[15px] leading-snug text-bone/85 lg:block">
-        <strong className="font-medium text-bone">Kostenloser Konditions-Check</strong> — neutrale
-        Bestzins-Indikation aus 400+ Banken, abgestimmt auf Ihre Bonität.
+        <strong className="font-medium text-bone">Kostenlose Erstprüfung</strong> — ob eine
+        Anlageimmobilie zu Ihrer Bonität, Liquidität und Strategie passt.
         <span className="italic text-bone"> Kein Verkaufsdruck.</span>
       </p>
       <p className="text-balance text-[15.5px] leading-snug text-bone/85 md:text-[16px] lg:hidden">
-        <strong className="font-medium text-bone">Konditionen vergleichen</strong> aus 400+ Banken — neutral
-        und Schufa-neutral. <span className="italic text-bone">Bestzins, nicht Hausbankzins.</span>
+        <strong className="font-medium text-bone">Kostenlos prüfen,</strong> ob eine Anlageimmobilie zu Ihrer
+        Situation passt. <span className="italic text-bone">Strategie, kein Verkaufsdruck.</span>
       </p>
 
       {/* CTA-Group */}
@@ -255,8 +245,8 @@ function HeroActionBlock() {
         </a>
         <div className="flex-1 md:flex-none">
           <MagneticButton href="#kontakt" size="lg" pulse>
-            <span className="md:hidden">Bestzins kostenlos prüfen</span>
-            <span className="hidden md:inline">Jetzt Bestzins kostenlos prüfen</span>
+            <span className="md:hidden">Jetzt kostenlos prüfen</span>
+            <span className="hidden md:inline">Jetzt kostenlos prüfen lassen</span>
           </MagneticButton>
         </div>
         <a
@@ -293,8 +283,8 @@ function MobilePropertyCard() {
       <div className="surface relative overflow-hidden rounded-2xl shadow-[0_18px_60px_-18px_rgba(0,0,0,0.6),0_0_60px_-20px_rgba(217,183,121,0.35)] md:rounded-3xl">
         <div className="relative h-[148px] overflow-hidden md:h-[260px]">
           <Image
-            src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=88"
-            alt="Modernes Einfamilienhaus — Beispiel Baufinanzierung mit Bestzins aus über 400 Banken, KfW-Förderung und 15-jähriger Zinsbindung deutschlandweit"
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=88"
+            alt="Beispielhafte Darstellung einer Anlageimmobilie"
             fill
             priority
             sizes="(min-width: 768px) 720px, 100vw"
@@ -307,28 +297,28 @@ function MobilePropertyCard() {
           <div className="absolute left-2.5 right-2.5 top-2.5 flex items-start justify-between md:left-4 md:right-4 md:top-4">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 bg-coal/80 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wide3 text-gold backdrop-blur md:px-3 md:py-1.5">
               <Building2 className="h-3 w-3" />
-              Beispielrechnung
+              Beispielhafte Darstellung
             </span>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-bone/20 bg-coal/80 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wide3 text-bone backdrop-blur md:px-3 md:py-1.5">
               <span className="dot" />
-              Bestzins
+              Anlageimmobilie
             </span>
           </div>
 
-          {/* Bottom row — Konditions-Indikation */}
+          {/* Bottom row — nur qualitative Tags, keine Zahlen */}
           <div className="absolute bottom-2.5 left-2.5 right-2.5 flex items-end justify-between gap-3 md:bottom-4 md:left-4 md:right-4">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-wide3 text-bone/70 md:text-[11px]">Zinsbindung 15 Jahre</p>
+              <p className="font-mono text-[10px] uppercase tracking-wide3 text-bone/70 md:text-[11px]">Standortprofil</p>
               <p
                 className="text-[26px] leading-none text-bone md:text-[40px]"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                ab <span className="italic text-gold">3,12 %</span>
+                Wertstabile <span className="italic text-gold">Lage</span>
               </p>
             </div>
             <div className="rounded-xl border border-bone/15 bg-coal/80 px-2.5 py-1.5 text-right backdrop-blur md:px-3 md:py-2">
-              <p className="font-mono text-[9px] uppercase tracking-wide3 text-ash md:text-[10px]">Stand</p>
-              <p className="font-mono text-[12px] leading-tight text-bone md:text-[14px]">live</p>
+              <p className="font-mono text-[9px] uppercase tracking-wide3 text-ash md:text-[10px]">Mietnachfrage</p>
+              <p className="font-mono text-[12px] leading-tight text-bone md:text-[14px]">stabil</p>
             </div>
           </div>
         </div>
@@ -338,29 +328,20 @@ function MobilePropertyCard() {
           <div className="flex items-center gap-2 md:gap-3">
             <div className="flex -space-x-1.5">
               {[
-                {
-                  src: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=120&q=80",
-                  alt: "Eigenheim Erstfinanzierung"
-                },
-                {
-                  src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=120&q=80",
-                  alt: "Bestand Anschlussfinanzierung"
-                },
-                {
-                  src: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=120&q=80",
-                  alt: "Modernisierungskredit & KfW-Sanierung"
-                }
-              ].map((m, i) => (
+                "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=120&q=80",
+                "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=120&q=80",
+                "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=120&q=80"
+              ].map((src, i) => (
                 <div
                   key={i}
                   className="relative h-5 w-5 overflow-hidden rounded-full border-2 border-coal ring-1 ring-bone/15 md:h-6 md:w-6"
                 >
-                  <Image src={m.src} alt={m.alt} fill className="object-cover" sizes="24px" />
+                  <Image src={src} alt="" fill className="object-cover" sizes="24px" />
                 </div>
               ))}
             </div>
             <span className="font-mono text-[10px] uppercase tracking-wide3 text-bone/70 md:text-[11px]">
-              400+ Banken · Deutschlandweit
+              Anlagestrategie · Deutschlandweit
             </span>
           </div>
           <span className="font-mono text-[11px] text-gold md:text-[13px]">→</span>

@@ -27,47 +27,42 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sueba-dragon-wohnbau.de"),
   title: {
     default:
-      "Baufinanzierung & Kredite — Bestzins aus 400+ Banken | Süba Dragon Wohnbau",
+      "Immobilien als Kapitalanlage — Mannheim, Frankfurt & deutschlandweit | Süba Dragon Wohnbau",
     template: "%s | Süba Dragon Wohnbau"
   },
   applicationName: "Süba Dragon Wohnbau GmbH",
   description:
-    "Unabhängige Baufinanzierung, Anschlussfinanzierung, Forward-Darlehen & Privatkredite — neutraler Vergleich aus über 400 Banken. KfW-Förderung integriert. Kostenloser Konditions-Check in Mannheim, Frankfurt, Stuttgart, München, Berlin, Hamburg & deutschlandweit. Kein Verkaufsdruck.",
+    "Anlageimmobilien strategisch geprüft: Standort, Finanzierung, Mietpotenzial. Süba Dragon Wohnbau vermittelt Immobilien als Kapitalanlage in Mannheim, Frankfurt, Stuttgart, München, Berlin, Hamburg & deutschlandweit. Kostenloser Investment-Check — kein Verkaufsdruck.",
   keywords: [
-    "Baufinanzierung",
-    "Baufinanzierung Vergleich",
-    "Baufinanzierung deutschlandweit",
-    "Anschlussfinanzierung",
-    "Forward-Darlehen",
-    "Hauskredit Vergleich",
-    "Immobilienfinanzierung",
-    "KfW Förderung Baufinanzierung",
-    "KfW 124",
-    "KfW 261 Klimafreundlicher Neubau",
-    "KfW 300 Wohneigentum für Familien",
-    "Modernisierungskredit",
-    "Bauspardarlehen",
-    "Volltilgerdarlehen",
-    "Privatkredit Vergleich",
-    "Ratenkredit",
-    "Konsumentenkredit",
-    "Bauzinsen aktuell",
-    "Bestzins Baufinanzierung",
-    "Baufinanzierung Mannheim",
-    "Baufinanzierung Frankfurt",
-    "Baufinanzierung Stuttgart",
-    "Baufinanzierung München",
-    "Baufinanzierung Berlin",
-    "Baufinanzierung Hamburg",
-    "Immobiliardarlehensvermittler",
-    "§ 34i GewO",
+    "Immobilien als Kapitalanlage",
+    "Anlageimmobilien",
+    "Anlageimmobilien Deutschland",
+    "Renditeobjekte",
+    "Investment-Check Immobilie",
+    "Immobilieninvestment Mannheim",
+    "Immobilieninvestment Frankfurt",
+    "Immobilieninvestment Stuttgart",
+    "Immobilieninvestment München",
+    "Immobilieninvestment Berlin",
+    "Immobilieninvestment Hamburg",
+    "Kapitalanlage Wohnung kaufen",
+    "Mehrfamilienhaus Kapitalanlage",
+    "Neubau Kapitalanlage",
+    "Bestandsimmobilie Rendite",
+    "Denkmalimmobilie AfA",
+    "Vermögensaufbau Immobilien",
+    "Eigenkapitalrendite Immobilien",
+    "Mietrendite berechnen",
+    "Standortanalyse Immobilien",
+    "Immobilienfinanzierung Beratung",
     "Süba Dragon Wohnbau",
-    "Süba Dragon Wohnbau GmbH"
+    "Süba Dragon Wohnbau GmbH",
+    "Immobilienvermittlung Mannheim"
   ],
   authors: [{ name: "Süba Dragon Wohnbau GmbH", url: "https://sueba-dragon-wohnbau.de" }],
   creator: "Süba Dragon Wohnbau GmbH",
   publisher: "Süba Dragon Wohnbau GmbH",
-  category: "Baufinanzierung · Kredite · Finanzdienstleistung",
+  category: "Immobilien · Kapitalanlage",
   alternates: {
     canonical: "/",
     languages: { "de-DE": "/" }
@@ -86,36 +81,28 @@ export const metadata: Metadata = {
   formatDetection: { telephone: true, address: true, email: true },
   openGraph: {
     title:
-      "Baufinanzierung & Kredite — Bestzins aus 400+ Banken | Süba Dragon Wohnbau",
+      "Immobilien als Kapitalanlage — Mannheim, Frankfurt & deutschlandweit | Süba Dragon Wohnbau",
     description:
-      "Unabhängiger Konditionsvergleich aus über 400 Banken — Baufinanzierung, Anschlussfinanzierung, Forward-Darlehen, KfW-Förderung & Privatkredite. Deutschlandweit. Kostenloser Konditions-Check, kein Verkaufsdruck.",
+      "Strategische Anlageimmobilien für Privatinvestoren — Standort, Finanzierung & Mietpotenzial vorab geprüft. Deutschlandweit. Kostenloser Investment-Check, kein Verkaufsdruck.",
     type: "website",
     locale: "de_DE",
     siteName: "Süba Dragon Wohnbau GmbH",
     url: "https://sueba-dragon-wohnbau.de",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&h=630&q=85",
+        url: "/sueba-dragon-logo-white.png",
         width: 1200,
         height: 630,
-        alt: "Süba Dragon Wohnbau — Baufinanzierung & Kredite, Bestzins aus 400+ Banken in Deutschland"
-      },
-      {
-        url: "/sueba-dragon-logo-white.png",
-        width: 600,
-        height: 315,
-        alt: "Süba Dragon Wohnbau GmbH — Logo"
+        alt: "Süba Dragon Wohnbau — Immobilien als Kapitalanlage"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Baufinanzierung deutschlandweit — Bestzins aus 400+ Banken",
+    title: "Anlageimmobilien deutschlandweit — strategisch geprüft",
     description:
-      "Kostenloser Konditions-Check für Baufinanzierung, Anschluss- & Forward-Darlehen sowie Privatkredite in Mannheim, Frankfurt, Stuttgart, München, Berlin, Hamburg & deutschlandweit. Bestzins, kein Hausbankzins.",
-    images: [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&h=630&q=85"
-    ]
+      "Kostenloser Investment-Check für Anlageimmobilien in Mannheim, Frankfurt, Stuttgart, München, Berlin, Hamburg & deutschlandweit. Strategie vor Objekt.",
+    images: ["/sueba-dragon-logo-white.png"]
   },
   verification: {
     other: { "msvalidate.01": "" }

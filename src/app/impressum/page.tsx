@@ -4,7 +4,7 @@ import { LegalShell } from "@/components/legal/legal-shell";
 export const metadata: Metadata = {
   title: "Impressum",
   description:
-    "Impressum der Süba Dragon Wohnbau GmbH — Anbieterkennzeichnung gemäß § 5 TMG, Handelsregister, Geschäftsführung, Erlaubnis nach § 34 i GewO und Aufsichtsbehörden.",
+    "Impressum der Süba Dragon Wohnbau GmbH — Anbieterkennzeichnung gemäß § 5 TMG, Handelsregister, Geschäftsführung und Aufsichtsbehörden.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/impressum" }
 };
@@ -81,36 +81,23 @@ export default function ImpressumPage() {
         <span className="num">05</span>Berufsrechtliche Angaben
       </h2>
       <p>
-        <strong>Tätigkeit:</strong> Vermittlung von Immobiliardarlehen für Verbraucher
-        (Immobiliardarlehensvermittler:in i. S. v. § 34 i Abs. 1 Satz 1 GewO) sowie Vermittlung von
-        Verbraucherdarlehen (Privat-/Ratenkrediten).
+        <strong>Tätigkeit:</strong> Vermittlung von Immobilien als Kapitalanlage
+        (Immobilienmakler:in i. S. v. § 34 c GewO).
       </p>
-      <h3>Erlaubnis nach § 34 i GewO</h3>
+      <h3>Erlaubnis nach § 34 c GewO</h3>
       <p>
         Erteilt durch:{" "}
-        <span className="placeholder">Zuständige Industrie- und Handelskammer (z. B. IHK Rhein-Neckar)</span>
+        <span className="placeholder">Zuständige Erlaubnisbehörde, z. B. Stadt Mannheim — Ordnungsamt</span>
       </p>
       <p>
-        Registrierungsnummer im Vermittlerregister:{" "}
-        <span className="placeholder">D-W-XXX-XXXX-XX</span>
-        <br />
-        Einsehbar über{" "}
-        <a href="https://www.vermittlerregister.info" target="_blank" rel="noopener noreferrer">
-          vermittlerregister.info
-        </a>{" "}
-        (DIHK).
-      </p>
-      <p>
-        Gesetzliche Berufsbezeichnung „Immobiliardarlehensvermittler“ wurde verliehen in der
-        Bundesrepublik Deutschland.
+        Gesetzliche Berufsbezeichnung „Immobilienmakler“ wurde verliehen in der Bundesrepublik
+        Deutschland.
       </p>
       <h3>Maßgebliche berufsrechtliche Regelungen</h3>
       <ul>
-        <li>§ 34 i Gewerbeordnung (GewO)</li>
-        <li>Immobiliardarlehensvermittlungsverordnung (ImmVermV)</li>
-        <li>Wohnimmobilienkreditrichtlinie (WoKri / RL 2014/17/EU)</li>
-        <li>§§ 491 ff. Bürgerliches Gesetzbuch (BGB) — Verbraucherdarlehensvertrag</li>
-        <li>Preisangabenverordnung (PAngV)</li>
+        <li>§ 34 c Gewerbeordnung (GewO)</li>
+        <li>Makler- und Bauträgerverordnung (MaBV)</li>
+        <li>§§ 652 ff. Bürgerliches Gesetzbuch (BGB) — Maklerrecht</li>
         <li>Geldwäschegesetz (GwG)</li>
       </ul>
       <p>
@@ -125,20 +112,9 @@ export default function ImpressumPage() {
         <span className="num">06</span>Aufsichtsbehörde
       </h2>
       <p>
-        Zuständige Aufsichtsbehörde gemäß § 34 i GewO:
+        <span className="placeholder">Zuständige Behörde</span>
         <br />
-        <span className="placeholder">Industrie- und Handelskammer Rhein-Neckar</span>
-        <br />
-        <span className="placeholder">L 1, 2 · 68161 Mannheim</span>
-      </p>
-
-      <h3>Vermögensschadenhaftpflichtversicherung</h3>
-      <p>
-        Pflichtversicherung gemäß § 34 i Abs. 2 Nr. 3 GewO:
-        <br />
-        <strong>Versicherer:</strong> <span className="placeholder">Name des Versicherers</span>
-        <br />
-        <strong>Geltungsraum:</strong> Deutschland / EU
+        <span className="placeholder">Anschrift der Behörde</span>
       </p>
 
       <h2>

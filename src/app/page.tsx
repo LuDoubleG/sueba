@@ -44,7 +44,7 @@ const SERVICE_CITIES = [
 export default function Home() {
   const businessLd = {
     "@context": "https://schema.org",
-    "@type": "FinancialService",
+    "@type": "RealEstateAgent",
     "@id": `${SITE_URL}/#organization`,
     name: "Süba Dragon Wohnbau GmbH",
     legalName: "Süba Dragon Wohnbau GmbH",
@@ -61,44 +61,35 @@ export default function Home() {
     },
     email: "info@sueba-wohnbau.de",
     telephone: "+49 621 3999 3141",
-    priceRange: "€",
-    image: [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=88",
-      `${SITE_URL}/sueba-dragon-logo-white.png`
-    ],
+    priceRange: "€€€",
+    image: `${SITE_URL}/sueba-dragon-logo-white.png`,
     logo: `${SITE_URL}/sueba-dragon-logo-white.png`,
     description:
-      "Süba Dragon Wohnbau GmbH — unabhängige Vermittlung von Baufinanzierung, Anschlussfinanzierung, Forward-Darlehen, KfW-Förderung, Modernisierungskrediten und Privatkrediten. Konditionsvergleich aus über 400 Banken, Sparkassen, Versicherern und Bausparkassen für Privatkund:innen in Mannheim, Frankfurt, Stuttgart, München, Berlin, Hamburg und deutschlandweit. Immobiliardarlehensvermittler nach § 34 i GewO.",
+      "Süba Dragon Wohnbau GmbH — strategische Vermittlung von Immobilien als Kapitalanlage. Anlageimmobilien, Renditeobjekte, Neubau & Bestand. Standortprüfung, Finanzierungs-Sparring und Mietpotenzial-Analyse für Privatinvestoren in Mannheim, Frankfurt, Stuttgart, München, Berlin, Hamburg und deutschlandweit.",
     url: SITE_URL,
     sameAs: [SITE_URL],
     knowsAbout: [
-      "Baufinanzierung",
-      "Anschlussfinanzierung",
-      "Forward-Darlehen",
-      "Volltilgerdarlehen",
-      "Annuitätendarlehen",
-      "Bauspardarlehen",
-      "KfW-Förderung",
-      "KfW Wohneigentumsprogramm 124",
-      "KfW Wohneigentum für Familien 300",
-      "KfW Klimafreundlicher Neubau 261",
-      "Modernisierungskredit",
-      "Sanierungskredit",
-      "Privatkredit",
-      "Ratenkredit",
-      "Konsumentenkredit",
-      "Bauzinsen Vergleich",
-      "Bestzins Baufinanzierung",
-      "Beleihungsauslauf",
-      "Bonitätsanalyse",
-      "Tilgungsstrategie"
+      "Immobilien als Kapitalanlage",
+      "Anlageimmobilien Deutschland",
+      "Renditeobjekte",
+      "Bestandsimmobilien",
+      "Neubau Kapitalanlage",
+      "Denkmalimmobilien",
+      "AfA Sonderabschreibung",
+      "Immobilienfinanzierung",
+      "Mietrendite & Cashflow",
+      "Standortanalyse",
+      "Investment-Strategie für Privatinvestoren",
+      "Eigenkapitalrendite",
+      "Vermögensaufbau mit Immobilien",
+      "Steuerliche Optimierung Immobilien"
     ],
     makesOffer: [
       {
         "@type": "Offer",
-        name: "Kostenloser Konditions-Check Baufinanzierung",
+        name: "Kostenloser Investment-Check",
         description:
-          "Neutraler Konditionsvergleich aus über 400 Banken, Sparkassen, Versicherern und Bausparkassen — abgestimmt auf Bonität, Eigenkapital, Vorhaben und Lebensplanung. Inklusive KfW-Förderprüfung. Unverbindlich, kostenfrei, persönlich.",
+          "Strategische Erstprüfung Ihrer Investment-Situation — Standort, Eigenkapital, Finanzierung, Steuer und passendes Objektprofil. Unverbindlich, schriftlich, in 7 Tagen.",
         price: "0",
         priceCurrency: "EUR",
         availability: "https://schema.org/InStock",
@@ -111,17 +102,16 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Service",
     "@id": `${SITE_URL}/#service`,
-    name: "Baufinanzierung & Kreditvermittlung",
-    serviceType: "Vermittlung von Immobiliardarlehen und Verbraucherkrediten",
+    name: "Vermittlung von Anlageimmobilien & Investment-Strategie",
+    serviceType: "Immobilien als Kapitalanlage",
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: SERVICE_CITIES.map((c) => ({ "@type": "City", name: c })),
     audience: {
       "@type": "Audience",
-      audienceType:
-        "Privatkund:innen, Erstkäufer:innen, Bauherren, Immobilieneigentümer:innen mit Anschlussbedarf, Modernisierer:innen"
+      audienceType: "Privatinvestoren, Selbstständige, Angestellte mit Vermögensaufbau-Fokus"
     },
     description:
-      "Unabhängige Vermittlung von Baufinanzierung, Anschlussfinanzierung, Forward-Darlehen, Modernisierungs- und Privatkrediten — deutschlandweit. Konditionsvergleich aus über 400 Banken, KfW-Förder-Integration, Schufa-neutrale Konditionsabfrage und persönliche Begleitung bis zur Auszahlung.",
+      "Strategische Vermittlung und Prüfung von Anlageimmobilien (Neubau, Bestand, Denkmal) — deutschlandweit. Inklusive Standort- und Mietpotenzial-Analyse, Finanzierungs-Sparring und steuerlicher Einordnung.",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -135,8 +125,8 @@ export default function Home() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Start", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Finanzierungs-Szenarien", item: `${SITE_URL}/#portfolio` },
-      { "@type": "ListItem", position: 3, name: "Konditions-Check", item: `${SITE_URL}/#kontakt` }
+      { "@type": "ListItem", position: 2, name: "Anlageimmobilien", item: `${SITE_URL}/#objekte` },
+      { "@type": "ListItem", position: 3, name: "Investment-Check", item: `${SITE_URL}/#kontakt` }
     ]
   };
 
@@ -167,61 +157,6 @@ export default function Home() {
     }
   };
 
-  const imageObjectsLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "ImageObject",
-        "@id": `${SITE_URL}/#hero-image`,
-        contentUrl:
-          "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=88",
-        url: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=88",
-        caption:
-          "Modernes Einfamilienhaus in Deutschland — Beispielrechnung für eine Baufinanzierung mit 15-jähriger Zinsbindung, KfW-Förderung und Bestzins aus über 400 Banken",
-        description:
-          "Hero-Bild der Süba Dragon Wohnbau GmbH: Modernes Einfamilienhaus, das beispielhaft eine Baufinanzierung mit 15-jähriger Zinsbindung, integrierter KfW-Förderung (124, 261, 300) und tagesaktuellem Bestzinsvergleich aus über 400 Banken visualisiert.",
-        width: 1600,
-        height: 1067,
-        creditText: "Unsplash",
-        license: "https://unsplash.com/license",
-        acquireLicensePage: "https://unsplash.com/license",
-        creator: { "@type": "Organization", name: "Unsplash" },
-        copyrightNotice: "Lizenzfrei zur kommerziellen Nutzung gemäß Unsplash-Lizenz",
-        representativeOfPage: true
-      },
-      {
-        "@type": "ImageObject",
-        "@id": `${SITE_URL}/#scenario-erstfinanzierung`,
-        contentUrl:
-          "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=82",
-        caption:
-          "Erstfinanzierung Eigenheim — Beispiel modernes Einfamilienhaus mit KfW 300 Wohneigentum für Familien",
-        width: 1400,
-        height: 933
-      },
-      {
-        "@type": "ImageObject",
-        "@id": `${SITE_URL}/#scenario-anschlussfinanzierung`,
-        contentUrl:
-          "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1400&q=82",
-        caption:
-          "Anschlussfinanzierung & Forward-Darlehen — Beispiel etablierte Bestandsimmobilie mit auslaufender Zinsbindung",
-        width: 1400,
-        height: 933
-      },
-      {
-        "@type": "ImageObject",
-        "@id": `${SITE_URL}/#scenario-modernisierung`,
-        contentUrl:
-          "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1400&q=82",
-        caption:
-          "Modernisierung & energetische Sanierung — Beispiel Sanierungskredit kombiniert mit KfW 261 Klimafreundlicher Neubau und KfW 358 Bestandsförderung",
-        width: 1400,
-        height: 933
-      }
-    ]
-  };
-
   return (
     <>
       <Script id="ld-business" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(businessLd) }} />
@@ -229,7 +164,6 @@ export default function Home() {
       <Script id="ld-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <Script id="ld-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <Script id="ld-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }} />
-      <Script id="ld-images" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageObjectsLd) }} />
 
       <div className="grain" aria-hidden />
       <CursorSpotlight />

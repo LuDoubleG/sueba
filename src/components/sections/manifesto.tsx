@@ -7,7 +7,7 @@ import { MagneticButton } from "@/components/ui/magnetic-button";
 
 const ease = [0.2, 0.7, 0.2, 1] as const;
 
-const phrase = ["Hausbankzins", "ist", "fast", "nie", "Bestzins."];
+const phrase = ["Stillstand", "ist", "bei", "Kapital", "selten", "neutral."];
 
 function PhraseWord({ word, index, progress }: { word: string; index: number; progress: MotionValue<number> }) {
   const start = 0.05 + index * 0.07;
@@ -15,7 +15,7 @@ function PhraseWord({ word, index, progress }: { word: string; index: number; pr
   const op = useTransform(progress, [start, end], [0.18, 1]);
   const blurPx = useTransform(progress, [start, end], [6, 0]);
   const filter = useTransform(blurPx, (v) => `blur(${v}px)`);
-  const isItalic = word === "fast";
+  const isItalic = word === "selten";
   return (
     <motion.span
       style={{ opacity: op, filter }}
@@ -44,7 +44,7 @@ export function Manifesto() {
             <span className="dot" />
             <span>02 — Manifest</span>
           </div>
-          <span>Konditionsklarheit</span>
+          <span>Kapitalschutz</span>
         </div>
 
         <motion.div style={{ y: blockY }} className="max-w-[1200px]">
@@ -66,9 +66,8 @@ export function Manifesto() {
             className="lg:col-span-4 lg:col-start-1"
           >
             <p className="text-balance text-base leading-relaxed text-bone/75 md:text-lg">
-              Banken vergleichen ihre eigenen Konditionen nicht ehrlich. Schon 0,2 % Zinsdifferenz machen über
-              20 Jahre Laufzeit fünfstellige Beträge aus. Wer das erste Hausbank-Angebot unterschreibt, zahlt
-              fast immer drauf.
+              Wer Entscheidungen aufschiebt, zahlt mit Zeit. In einem Umfeld aus Inflation, Marktschwankungen und steigenden Lebenshaltungskosten
+              werden strukturierte Investmententscheidungen entscheidend.
             </p>
           </motion.div>
 
@@ -103,9 +102,9 @@ export function Manifesto() {
               className="mt-10 flex flex-col items-start gap-4 rounded-2xl border border-gold/20 bg-gold/[0.04] p-5 sm:flex-row sm:items-center sm:justify-between md:p-6"
             >
               <p className="text-[15px] leading-snug text-bone/90">
-                <span className="font-medium text-bone">Was zahlen Sie heute zu viel?</span> Wir prüfen es kostenlos und neutral.
+                <span className="font-medium text-bone">Wo stehen Sie heute?</span> Lassen Sie es uns kostenlos einordnen.
               </p>
-              <MagneticButton href="#kontakt">Konditionen kostenlos prüfen</MagneticButton>
+              <MagneticButton href="#kontakt">Standort kostenlos prüfen</MagneticButton>
             </motion.div>
           </div>
         </div>

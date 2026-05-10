@@ -4,7 +4,7 @@ import { LegalShell } from "@/components/legal/legal-shell";
 export const metadata: Metadata = {
   title: "Allgemeine Geschäftsbedingungen (AGB)",
   description:
-    "Allgemeine Geschäftsbedingungen der Süba Dragon Wohnbau GmbH für die Vermittlung von Baufinanzierung, Anschlussfinanzierung und Privatkrediten sowie den kostenlosen Konditions-Check.",
+    "Allgemeine Geschäftsbedingungen der Süba Dragon Wohnbau GmbH für die Vermittlung von Anlageimmobilien und das Erstgespräch / Investment-Check.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/agb" }
 };
@@ -17,7 +17,7 @@ export default function AgbPage() {
       index="10"
       eyebrow="Rechtliches"
       title="Allgemeine Geschäftsbedingungen"
-      intro={`Diese AGB regeln die Geschäftsbeziehung zwischen der Süba Dragon Wohnbau GmbH und ihren Kund:innen im Rahmen der Vermittlung von Immobiliardarlehen (§ 34 i GewO), Verbraucherkrediten sowie der unverbindlichen Erstprüfung (\u201eKonditions-Check\u201d).`}
+      intro={`Diese AGB regeln die Geschäftsbeziehung zwischen der Süba Dragon Wohnbau GmbH und ihren Kund:innen im Rahmen der Vermittlung von Immobilien als Kapitalanlage sowie der unverbindlichen Erstprüfung (\u201eInvestment-Check\u201d).`}
       updated={UPDATED}
     >
       <h2>
@@ -47,75 +47,70 @@ export default function AgbPage() {
         <span className="num">§ 2</span>Leistungsgegenstand
       </h2>
       <p>
-        (1) Der Anbieter ist <strong>Immobiliardarlehensvermittler nach § 34 i Abs. 1 Satz 1 GewO</strong>{" "}
-        und erbringt Leistungen im Bereich der Vermittlung von Verbraucher- und Immobiliardarlehen,
-        insbesondere:
+        (1) Der Anbieter erbringt Leistungen im Bereich der Vermittlung und Beratung rund um Immobilien
+        als Kapitalanlage, insbesondere:
       </p>
       <ul>
-        <li>Vermittlung von Baufinanzierungen, Anschluss- und Forward-Darlehen</li>
-        <li>Vermittlung von Modernisierungs- und Sanierungskrediten</li>
-        <li>Vermittlung von Privat- bzw. Ratenkrediten (Verbraucherdarlehen i. S. d. §§ 491 ff. BGB)</li>
-        <li>Integration von KfW-Förderprogrammen sowie Landesförderungen</li>
-        <li>Konditionsvergleich und strukturierte Bonitätsanalyse</li>
-        <li>Konditions-Check als kostenfreie, unverbindliche Erstprüfung</li>
+        <li>Vermittlung von Anlageimmobilien (Bestand &amp; Neubau)</li>
+        <li>Standort- und Mietpotenzial-Analyse</li>
+        <li>Finanzierungs-Sparring (keine eigene Finanzierungsberatung i. S. v. § 34 i GewO)</li>
+        <li>Erstprüfung („Investment-Check“) — kostenfrei und unverbindlich</li>
+        <li>Vermittlung an spezialisierte Drittanbieter (Steuerberatung, Banken, Hausverwaltung)</li>
       </ul>
       <p>
-        (2) Der Anbieter erbringt <strong>keine Anlageberatung</strong> nach KWG/WpHG, keine
-        Steuer- oder Rechtsberatung. Aussagen zu Konditionen, Bauzinsen, Förderfähigkeit und
-        steuerlichen Effekten sind tagesaktuelle, unverbindliche Einschätzungen — verbindlich
-        sind ausschließlich die jeweiligen Bank-, Bausparkassen- oder Versicherer-Angebote.
+        (2) Der Anbieter ist <strong>kein</strong> Anlageberater, Steuerberater, Rechtsanwalt oder
+        Finanzdienstleister im Sinne des KWG. Sämtliche Aussagen zu Rendite, Wertentwicklung,
+        steuerlichen Auswirkungen oder rechtlichen Konsequenzen sind unverbindliche Einschätzungen und
+        ersetzen keine individuelle Beratung durch entsprechend qualifizierte Fachpersonen.
       </p>
 
       <h2>
-        <span className="num">§ 3</span>Konditions-Check / Erstgespräch
+        <span className="num">§ 3</span>Investment-Check / Erstgespräch
       </h2>
       <p>
-        (1) Der „Konditions-Check“ ist eine <strong>kostenfreie und unverbindliche</strong>{" "}
-        Erstprüfung der Finanzierungs- bzw. Kreditsituation. Hierbei werden Vorhaben, Bonität,
-        Eigenkapital, monatliche Belastbarkeit und Lebensplanung erörtert, um eine erste
-        Konditionsindikation zu erstellen.
+        (1) Der „Investment-Check“ ist eine <strong>kostenfreie und unverbindliche</strong>{" "}
+        Erstprüfung der individuellen Investment-Situation der Kund:in. Hierbei werden Bonität,
+        Liquidität, persönliche Ziele und Risikoneigung erörtert, um zu klären, ob eine Anlageimmobilie
+        grundsätzlich zur Strategie der Kund:in passt.
       </p>
       <p>
-        (2) Der Konditions-Check stellt <strong>kein verbindliches Angebot</strong> für ein
-        Darlehen dar. Verbindliche Konditionen kommen ausschließlich nach Bonitätsprüfung und
-        Zusage durch die finanzierende Bank zustande. Es entstehen für die Kund:in keinerlei
-        Verpflichtungen.
+        (2) Der Investment-Check stellt <strong>kein verbindliches Angebot zum Verkauf oder zur
+        Vermittlung einer konkreten Immobilie</strong> dar. Es entstehen für die Kund:in keinerlei
+        Verpflichtungen. Der Anbieter behält sich vor, ein Erstgespräch ohne Angabe von Gründen
+        abzulehnen.
       </p>
       <p>
         (3) Die Anfrage über das Kontaktformular der Website stellt eine{" "}
-        <em>Aufforderung zur Abgabe eines Angebots</em> (invitatio ad offerendum) dar. Ein
-        Vermittlungsauftrag kommt erst durch separate schriftliche bzw. textliche Bestätigung der
-        Kund:in zustande.
+        <em>Aufforderung zur Abgabe eines Angebots</em> (invitatio ad offerendum) dar. Ein Vertrag
+        kommt erst durch separate schriftliche Bestätigung bzw. durch das tatsächliche Erstgespräch
+        zustande.
       </p>
 
       <h2>
-        <span className="num">§ 4</span>Vergütung &amp; Vermittlungsprovision
+        <span className="num">§ 4</span>Vermittlungsvertrag &amp; Provision
       </h2>
       <p>
-        (1) Die Vermittlungsleistung des Anbieters ist für die Kund:in grundsätzlich{" "}
-        <strong>kostenfrei</strong>. Die Vergütung erfolgt im Erfolgsfall durch die finanzierende
-        Bank, Bausparkasse oder den Versicherer (sog. Provisionscourtage), die in den
-        ESIS-Pflichtinformationen und der Effektivzins-Kalkulation des Darlehensvertrags
-        enthalten ist.
+        (1) Bei konkreter Vermittlung eines Immobilienobjekts wird ein eigenständiger{" "}
+        <strong>Maklervertrag in Textform</strong> abgeschlossen, in dem Provisionssatz, Fälligkeit,
+        Auslagen und gegenseitige Pflichten gesondert geregelt werden.
       </p>
       <p>
-        (2) Sollte im Einzelfall ausnahmsweise eine direkte Vergütung durch die Kund:in
-        vereinbart werden, bedarf dies einer gesonderten <strong>schriftlichen Vereinbarung
-        in Textform</strong> vor Vermittlungsbeginn unter Angabe von Vergütungshöhe,
-        Fälligkeit und Bedingungen (§ 34 i Abs. 5 GewO i. V. m. § 17 ImmVermV).
+        (2) Es gelten die gesetzlichen Regelungen der §§ 652 ff. BGB sowie — bei Verbrauchergeschäften
+        über Kaufverträge an Wohnungen oder Einfamilienhäusern — die Bestimmungen der{" "}
+        <strong>§§ 656 a–d BGB</strong> (Textform-Erfordernis, Provisionsteilung).
       </p>
       <p>
-        (3) Eine doppelte Vergütung (sog. Doppeltätigkeit) wird gegenüber der Kund:in offengelegt.
+        (3) Die genaue Höhe der Provision sowie die Provisionspflichtigkeit der Kund:in werden vor
+        Vermittlung individuell vereinbart und bedürfen der Textform.
       </p>
 
       <h2>
         <span className="num">§ 5</span>Pflichten der Kund:in
       </h2>
       <p>
-        (1) Die Kund:in ist verpflichtet, alle für die Erstprüfung und Vermittlung notwendigen
-        Angaben — insbesondere zu Einkommen, Eigenkapital, bestehenden Verbindlichkeiten,
-        Schufa-Status, Vorhaben und gewünschter Tilgungs-/Laufzeitstruktur —{" "}
-        wahrheitsgemäß und vollständig zu erteilen.
+        (1) Die Kund:in ist verpflichtet, alle für die Erstprüfung und Vermittlung notwendigen Angaben
+        wahrheitsgemäß und vollständig zu erteilen. Dies betrifft insbesondere Angaben zu Bonität,
+        Eigenkapital, monatlich verfügbarer Liquidität sowie persönlichen Investmentzielen.
       </p>
       <p>
         (2) Die Kund:in hat den Anbieter unverzüglich zu informieren, wenn sich für die Vermittlung
@@ -172,16 +167,15 @@ export default function AgbPage() {
         vertragstypischen Schaden.
       </p>
       <p>
-        (3) Der Anbieter übernimmt <strong>keine Garantie für die Verfügbarkeit oder Höhe
-        bestimmter Konditionen</strong>. Bauzinsen sind tagesabhängig, bonitätsabhängig und
-        marktabhängig. Eine Bestzins-Indikation aus dem Konditions-Check ist unverbindlich;
-        verbindliche Konditionen ergeben sich erst aus dem Bank-Angebot bzw. Darlehensvertrag.
+        (3) Der Anbieter übernimmt <strong>keine Garantie für den wirtschaftlichen Erfolg</strong>{" "}
+        einer vermittelten Immobilieninvestition. Insbesondere wird keine Haftung übernommen für
+        zukünftige Marktentwicklungen, Mietausfälle, Zinsänderungen, Wertentwicklung der Immobilie,
+        steuerliche Behandlung oder Bonitätsentwicklung der Kund:in.
       </p>
       <p>
-        (4) Hinweise zu Tilgung, Laufzeit, Förderfähigkeit oder Forward-Strategien ersetzen
-        keine individuelle Beratung durch Fachpersonen (Steuerberater, Anwält:in, Bank).
-        Insbesondere für steuerliche Auswirkungen (z. B. AfA, Werbungskosten,
-        Nichtveranlagungsbescheinigung) ist eine separate steuerliche Beratung erforderlich.
+        (4) Hinweise und Empfehlungen ersetzen keine individuelle Beratung durch Fachpersonen
+        (Steuerberater, Anwält:in, Bank). Der Anbieter empfiehlt ausdrücklich, vor jedem
+        Investmentschritt eine entsprechende Fachberatung in Anspruch zu nehmen.
       </p>
 
       <h2>
@@ -224,11 +218,9 @@ export default function AgbPage() {
       <div className="legal-card is-warning">
         <p>
           <strong>Hinweis:</strong> Diese AGB stellen einen sorgfältig erstellten Mustertext dar, der
-          die typischen Aspekte einer Vermittlungstätigkeit nach § 34 i GewO sowie der
-          Verbraucherkreditvermittlung abdeckt. Vor produktivem Einsatz ist eine{" "}
-          <strong>individuelle rechtliche Prüfung durch eine:n auf Bank- und Kapitalmarktrecht
-          spezialisierte:n Rechtsanwält:in</strong> sowie die Abstimmung mit der zuständigen IHK
-          (Aufsicht nach § 34 i GewO) dringend zu empfehlen.
+          die typischen Aspekte einer Immobilien­vermittlungs­tätigkeit abdeckt. Vor produktivem Einsatz
+          ist eine <strong>individuelle rechtliche Prüfung durch eine:n auf Immobilien- und
+          Maklerrecht spezialisierte:n Rechtsanwält:in</strong> dringend zu empfehlen.
         </p>
       </div>
     </LegalShell>
